@@ -1,0 +1,50 @@
+{
+  "name": "validator-air",
+  "version": "1.0.0",
+  "author": "Linus Wu",
+  "license": "MIT",
+  "description": "A lightweight and flexible validation library for JavaScript and TypeScript, supporting custom and built-in validation rules with configurable match modes.",
+  "keywords": [
+    "validation",
+    "data validation",
+    "custom validators",
+    "JavaScript validation",
+    "TypeScript validation",
+    "validation library",
+    "form validation",
+    "input validation",
+    "validator",
+    "data integrity",
+    "email validation",
+    "string validation",
+    "number validation"
+  ],
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.esm.js",
+  "types": "./dist/types/index.d.ts",
+  "files": [
+    "dist/",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "node scripts/clean.js && rollup -c",
+    "prepare": "npm run build"
+  },
+  "exports": {
+    ".": {
+      "require": "./dist/index.cjs",
+      "import": "./dist/index.esm.js",
+      "types": "./dist/types/index.d.ts"
+    }
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^28.0.2",
+    "@rollup/plugin-node-resolve": "^16.0.0",
+    "rollup": "^4.31.0",
+    "rollup-plugin-typescript2": "^0.36.0",
+    "typescript": "^5.7.3"
+  },
+  "type": "module",
+  "sideEffects": false
+}
