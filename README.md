@@ -139,9 +139,14 @@ type Validator = (value: any) => boolean;
 | `maxLength(max)`       | Ensures the value has a maximum length.                                         | `max` (_number_): The maximum length.                                |
 | `exactLength(length)`  | Ensures the value has an exact length.                                          | `length` (_number_): The exact length.                               |
 | `number()`             | Validates if the value is a number.                                             |                                                                      |
+| `integer()`            | Validates if the value is an integer.                                           |                                                                      |
+| `decimal()`            | Validates if the value is a decimal (non-integer) number.                       |                                                                      |
+| `positive()`           | Ensures the value is a positive number (greater than 0).                        |                                                                      |
+| `negative()`           | Ensures the value is a negative number (less than 0).                           |                                                                      |
+| `greaterThan(value)`   | Ensures the value is greater than a specific number.                            | `value` (_number_): The number to compare.                           |
+| `lessThan(value)`      | Ensures the value is less than a specific number.                               | `value` (_number_): The number to compare.                           |
 | `even()`               | Validates if the value is an even number.                                       |                                                                      |
 | `odd()`                | Validates if the value is an odd number.                                        |                                                                      |
-| `decimal()`            | Validates if the value is a decimal (non-integer) number.                       |                                                                      |
 | `range(min, max)`      | Ensures the value is within a specified numeric range.                          | `min` (_number_): Minimum value.<br>`max` (_number_): Maximum value. |
 | `decimalPlaces(count)` | Ensures the value has a specific number of decimal places.                      | `count` (_number_): Required decimal places.                         |
 | `string()`             | Validates if the value is a string.                                             |                                                                      |
