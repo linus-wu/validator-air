@@ -1,6 +1,6 @@
 {
   "name": "validator-air",
-  "version": "1.2.0",
+  "version": "1.0.0",
   "author": "Linus Wu",
   "license": "MIT",
   "description": "A lightweight and flexible validation library for JavaScript and TypeScript, supporting custom and built-in validation rules with configurable match modes.",
