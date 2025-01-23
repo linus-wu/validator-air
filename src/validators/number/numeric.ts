@@ -2,16 +2,36 @@ export const number = () => {
   return (value: any) => typeof value === "number" && !isNaN(value);
 };
 
+export const integer = () => {
+  return (value: any) => typeof value === "number" && Number.isInteger(value);
+};
+
+export const decimal = () => {
+  return (value: any) => typeof value === "number" && !Number.isInteger(value);
+};
+
+export const positive = () => {
+  return (value: any) => typeof value === "number" && value > 0;
+};
+
+export const negative = () => {
+  return (value: any) => typeof value === "number" && value < 0;
+};
+
+export const greaterThan = (compareValue: number) => {
+  return (value: any) => typeof value === "number" && value > compareValue;
+};
+
+export const lessThan = (compareValue: number) => {
+  return (value: any) => typeof value === "number" && value < compareValue;
+};
+
 export const even = () => {
   return (value: any) => typeof value === "number" && value % 2 === 0;
 };
 
 export const odd = () => {
   return (value: any) => typeof value === "number" && value % 2 !== 0;
-};
-
-export const decimal = () => {
-  return (value: any) => typeof value === "number" && !Number.isInteger(value);
 };
 
 export const range = (min: number, max: number) => {
