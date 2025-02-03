@@ -1,7 +1,3 @@
-export const string = () => {
-  return (value: any) => typeof value === "string";
-};
-
 export const alpha = () => {
   const alphaRegex = /^[A-Za-z]+$/;
   return (value: any) => typeof value === "string" && alphaRegex.test(value);
