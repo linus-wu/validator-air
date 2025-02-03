@@ -135,10 +135,15 @@ type Validator = (value: any) => boolean;
 | Validator              | Description                                                                     | Parameters                                                           |
 | ---------------------- | ------------------------------------------------------------------------------- | -------------------------------------------------------------------- |
 | `required()`           | Ensures the value is not null, undefined, or an empty string.                   |                                                                      |
+| `number()`             | Validates if the value is a number.                                             |                                                                      |
+| `bigint()`             | Validates if the value is a bigint.                                             |                                                                      |
+| `string()`             | Validates if the value is a string.                                             |                                                                      |
+| `boolean()`            | Validates if the value is a boolean.                                            |                                                                      |
+| `array()`              | Validates if the value is a array.                                              |                                                                      |
+| `object()`             | Validates if the value is a object.                                             |                                                                      |
 | `minLength(min)`       | Ensures the value has a minimum length.                                         | `min` (_number_): The minimum length.                                |
 | `maxLength(max)`       | Ensures the value has a maximum length.                                         | `max` (_number_): The maximum length.                                |
 | `exactLength(length)`  | Ensures the value has an exact length.                                          | `length` (_number_): The exact length.                               |
-| `number()`             | Validates if the value is a number.                                             |                                                                      |
 | `integer()`            | Validates if the value is an integer.                                           |                                                                      |
 | `decimal()`            | Validates if the value is a decimal (non-integer) number.                       |                                                                      |
 | `positive()`           | Ensures the value is a positive number (greater than 0).                        |                                                                      |
@@ -149,7 +154,6 @@ type Validator = (value: any) => boolean;
 | `odd()`                | Validates if the value is an odd number.                                        |                                                                      |
 | `range(min, max)`      | Ensures the value is within a specified numeric range.                          | `min` (_number_): Minimum value.<br>`max` (_number_): Maximum value. |
 | `decimalPlaces(count)` | Ensures the value has a specific number of decimal places.                      | `count` (_number_): Required decimal places.                         |
-| `string()`             | Validates if the value is a string.                                             |                                                                      |
 | `alpha()`              | Ensures the value contains only alphabetic characters (A-Z, a-z).               |                                                                      |
 | `alphaNumeric()`       | Ensures the value contains only alphanumeric characters (A-Z, a-z, 0-9).        |                                                                      |
 | `uppercase()`          | Validates if the value contains only uppercase letters.                         |                                                                      |
