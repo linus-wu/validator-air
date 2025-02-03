@@ -1,7 +1,3 @@
-export const number = () => {
-  return (value: any) => typeof value === "number" && !isNaN(value);
-};
-
 export const integer = () => {
   return (value: any) => typeof value === "number" && Number.isInteger(value);
 };
