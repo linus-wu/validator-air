@@ -39,5 +39,10 @@
     "typescript": "^5.7.3"
   },
   "type": "module",
-  "sideEffects": false
+  "sideEffects": false,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/linus-wu/validator-air"
+  },
+  "homepage": "https://github.com/linus-wu/validator-air"
 }
